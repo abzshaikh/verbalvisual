@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./js/main.js" defer></script>
+        <script src="./plugins/butter.js" defer></script>
+        <script src="./plugins/rellax.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" defer></script>
+        
+    </head>
+    <body>
+        <a class="linkpage" href="./menu.html">
+            <div class="burger-menu-wrapper">
+                <div class="burger-menu">
+                    <p>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <div style="width: 100%;height: 100vh;position: fixed;">
+            <canvas id="canvasBg">
+            </canvas>
+            <!-- <div class='a'></div>
+            <div class='b'></div>
+            <div class='c'></div>
+            <div class='d'></div> -->
+        </div>
+    
+        <div id="main-wrapper" class="main-wrapper" >
+            <!-- <div class='a'></div>
+            <div class='b'></div>
+            <div class='c'></div>
+            <div class='d'></div>
+            <div class='e'></div>
+            <div class='f'></div>
+            <div class='g'></div>
+            <div class='h'></div> -->
+
+            <!-- <div class="background">
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+                <span class="bg-particle"></span>
+            </div> -->
+            
+            <div class="banner">
+                <div class="banner-logo">
+                    <svg viewBox="0 0 177 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logo d-none d-md-block" data-v-1e177e36=""><title data-v-1e177e36="">logo</title><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-v-1e177e36=""><g id="logo" fill="#000000" fill-rule="nonzero" data-v-1e177e36=""><path d="M6.44,8.52 L3,5.06 L8,0 L14.67,6.67 L19.4,2 C20.77848,0.74704 22.898,0.79756 24.21522,2.11478 C25.53244,3.432 25.58296,5.55152 24.33,6.93 L19.64,11.6 L29.39,21.35 L24.33,26.41 L24.33,26.41 L19.75,31 L27,38.209999 C28.02696,39.08448 28.47338,40.4631 28.15394,41.773567 C27.83449,43.08403 26.80373,44.10257 25.48955,44.406361 C24.17537,44.710152 22.80217,44.247322 21.94,43.209999 L14.7,36 L14.7,36 L9.77,31.12 L9.77,31.12 L5,26.29 L5,26.29 L0,21.38 L0,21.38 L0,21.38 L5.07,16.3 L5.07,16.3 L7.51,13.86 L12.43,18.78 L10,21.23 L14.83,26.06 L19.4,21.48 L15.9,18 L15.9,18 L6.44,8.52 Z M12.44,38.25 L5,45.6899986 L0.12,40.77 L7.56,33.33 L12.44,38.25 Z" id="Fill-1" data-v-1e177e36=""></path><path d="M95.41,18.6 C92.76,18.6 90.71,20.13 90.41,22.41 L93.26,23.04 C93.38062,21.9384 94.34373,21.12481 95.45,21.19 C96.45,21.19 97.04,21.58 97.04,22.26 C97.04,22.94 96.48,23.19 94.65,23.63 C91.65,24.35 90.54,25.39 90.54,27.33 C90.54,29.42 92.04,30.79 94.32,30.79 C95.46149,30.88485 96.57861,30.42311 97.32,29.55 L97.32,29.55 L97.32,30.46 L100.11,30.46 L100.11,23 C100.14,20.28 98.31,18.6 95.41,18.6 Z M97.11,26.6 C97.11,27.55 96.2,28.21 94.89,28.21 C93.96,28.21 93.48,27.86 93.48,27.16 C93.48,26.46 93.96,26.21 95.35,25.84 C96.35,25.53 96.87,25.27 97.07,24.92 L97.07,24.92 L97.11,26.6 Z" id="Fill-3" data-v-1e177e36=""></path><path d="M84,18.6 C82.92795,18.54343 81.87522,18.90149 81.06,19.6 L81.06,19.6 L81.06,14.6 L77.85,14.6 L77.85,30.46 L80.73,30.46 L80.73,29.46 L80.73,29.46 C81.57014,30.36443 82.76708,30.85126 84,30.79 C87,30.79 89.15,28.24 89.15,24.7 C89.15,21.16 87,18.6 84,18.6 Z M83.41,27.94 C82.76151,27.9658 82.13185,27.71879 81.67388,27.25892 C81.21592,26.79906 80.97151,26.16838 81,25.52 L81,23.87 C80.9688,23.22438 81.20954,22.59522 81.66373,22.13532 C82.11794,21.67542 82.74404,21.42686 83.39,21.45 C85.09,21.45 86.02,22.63 86.02,24.7 C86.02,26.77 85,27.94 83.36,27.94 L83.41,27.94 Z" id="Fill-4" data-v-1e177e36=""></path><polygon id="Fill-5" points="54.43 15.23 50.76 25.96 50.71 25.96 47.01 15.23 43.62 15.23 49.1 30.46 52.34 30.46 57.85 15.23" data-v-1e177e36=""></polygon><path d="M72.68,20 L72.63,20 L72.63,19 L69.72,19 L69.72,30.46 L72.83,30.46 L72.83,24.26 C72.83,22.59 73.52,21.69 74.83,21.69 C75.26617,21.69123 75.70015,21.75179 76.12,21.87 L76.64,18.87 C76.15189,18.73313 75.64692,18.6658 75.14,18.67 C74.14342,18.65092 73.20979,19.15569 72.68,20 L72.68,20 Z" id="Fill-6" data-v-1e177e36=""></path><polygon id="Fill-7" points="102.18 14.58 105.29 14.58 105.29 30.46 102.18 30.46" data-v-1e177e36=""></polygon><path d="M62.58,18.6 C59.38,18.6 57.14,21.11 57.14,24.7 C57.14,28.29 59.38,30.79 62.65,30.79 C64.667,30.89267 66.58105,29.89353 67.65,28.18 L65.45,26.46 C64.9001,27.49158 63.83856,28.14836 62.67,28.18 C61.25,28.18 60.38,27.24 60.29,25.61 L68,25.61 L68,24.7 C68,21.06 65.8,18.6 62.58,18.6 Z M60.27,23.41 C60.30811,22.16007 61.34994,21.17637 62.6,21.21 C63.21874,21.14717 63.83485,21.35161 64.2933,21.77185 C64.75175,22.1921 65.00889,22.78814 65,23.41 L60.27,23.41 Z" id="Fill-8" data-v-1e177e36=""></path><path d="M144.24,23.22 C143.05,22.87 142.18,22.63 142.18,22.04 C142.18,21.45 142.72,21.13 143.64,21.13 C144.6502,21.12879 145.5301,21.8187 145.77,22.8 L148.51,22 C147.8486,19.89117 145.8476,18.49416 143.64,18.6 C141.13,18.6 139.28,20.1 139.28,22.08 C139.28,24.41 141.35,25.08 143.28,25.63 C144.65,26.07 145.78,26.39 145.78,27.31 C145.78,27.89 145.13,28.24 144.04,28.24 C142.7078,28.32641 141.5516,27.33033 141.44,26 L138.67,26.74 C139.17,29.35 141.13,30.79 144.07,30.79 C147.01,30.79 148.71,29.35 148.71,27.2 C148.71,24.52 146.25,23.78 144.24,23.22 Z" id="Fill-9" data-v-1e177e36=""></path><path d="M157.13,25.81 C157.1852,26.36717 156.997,26.92102 156.6137,27.32919 C156.2305,27.73736 155.6895,27.96004 155.13,27.94 C153.8,27.94 153.13,27.24 153.13,25.81 L153.13,18.93 L150,18.93 L150,26.52 C150,29.2 151.52,30.79 154.13,30.79 C155.3155,30.82331 156.4547,30.32881 157.24,29.44 L157.29,29.44 L157.29,30.44 L160.29,30.44 L160.29,18.93 L157.18,18.93 L157.13,25.81 Z" id="Fill-10" data-v-1e177e36=""></path><polygon id="Fill-11" points="114.32 16.75 111.67 16.75 111.67 21.3 107.42 21.3 107.42 23.78 111.67 23.78 111.67 28.35 114.32 28.35 114.32 23.78 118.54 23.78 118.54 21.3 114.32 21.3" data-v-1e177e36=""></polygon><polygon id="Fill-12" points="173.77 14.58 176.88 14.58 176.88 30.46 173.77 30.46" data-v-1e177e36=""></polygon><path d="M167,18.6 C164.35,18.6 162.3,20.13 162,22.41 L164.85,23.04 C164.9699,21.95455 165.9088,21.14665 167,21.19 C168,21.19 168.59,21.58 168.59,22.26 C168.59,22.94 168.03,23.19 166.2,23.63 C163.2,24.35 162.09,25.39 162.09,27.33 C162.09,29.42 163.59,30.79 165.87,30.79 C167.0115,30.88485 168.1286,30.42311 168.87,29.55 L168.87,29.55 L168.87,30.46 L171.66,30.46 L171.66,23 C171.73,20.28 169.9,18.6 167,18.6 Z M168.7,26.6 C168.7,27.55 167.79,28.21 166.48,28.21 C165.55,28.21 165.07,27.86 165.07,27.16 C165.07,26.46 165.55,26.21 166.94,25.84 C167.94,25.53 168.46,25.27 168.66,24.92 L168.66,24.92 L168.7,26.6 Z" id="Fill-13" data-v-1e177e36=""></path><path d="M135.63,14.51 C134.7132,14.51 133.97,15.25321 133.97,16.17 C133.97,17.08679 134.7132,17.83 135.63,17.83 C136.5468,17.83 137.29,17.08679 137.29,16.17 C137.29,15.25321 136.5468,14.51 135.63,14.51 L135.63,14.51 Z" id="Fill-14" data-v-1e177e36=""></path><polygon id="Fill-15" points="126.03 25.96 125.99 25.96 122.29 15.23 118.9 15.23 124.38 30.46 127.62 30.46 133.13 15.23 129.71 15.23" data-v-1e177e36=""></polygon><polygon id="Fill-16" points="134.08 18.93 137.19 18.93 137.19 30.46 134.08 30.46" data-v-1e177e36=""></polygon></g></g></svg>
+                </div>
+                <div class="banner-text">
+                    <div class="text-wrap"><h1>We Design, Build & Grow Digital</h1></div>
+                    <div class="text-wrap"><h1>Flagships For Thoughtful Brands.</h1></div>
+                </div>
+                
+                <div class="arrow-grp">
+                    <div class="arrow-1">
+                        <svg viewBox="0 0 32 32" ><g><path d="M28.29,15.29,17,26.59V3a1,1,0,0,0-2,0V26.59L3.71,15.29a1,1,0,0,0-1.42,1.42l13,13a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l13-13a1,1,0,0,0-1.42-1.42Z" fill="#6f61e8"/></g></svg>
+                    </div>
+                    <div class="arrow-2">
+                        <svg viewBox="0 0 32 32" ><g><path d="M28.29,15.29,17,26.59V3a1,1,0,0,0-2,0V26.59L3.71,15.29a1,1,0,0,0-1.42,1.42l13,13a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l13-13a1,1,0,0,0-1.42-1.42Z" fill="#6f61e8"/></g></svg>
+                    </div>
+                    <div class="arrow-3">
+                        <svg viewBox="0 0 32 32" ><g><path d="M28.29,15.29,17,26.59V3a1,1,0,0,0-2,0V26.59L3.71,15.29a1,1,0,0,0-1.42,1.42l13,13a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l13-13a1,1,0,0,0-1.42-1.42Z" fill="#6f61e8"/></g></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/vpv_carhartt_wip_01.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo1" src="./images/carhartt_logo_melanin.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-1">
+                            <img src="./images/vpv_carhartt_wip_02.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-1">
+                            <img src="./images/vpv_carhartt_wip_03.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>design <span class="dot"></span></p>
+                            <p>build <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/190722-Mens-194-RoyaleHigh-Nero-RMBK-EDO-Mo-002-2.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo2" src="./images/greats_logo_melanin_2.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-2">
+                            <img src="./images/Royale-Navy-Editorial-DSCF8016.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-2">
+                            <img src="./images/190722-Mens-194-RoyaleHigh-Blanco-RMOW-EDO-Mo-006.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>redesign <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/VAAY_SportGel-Medballs-_1_-2.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo3" src="./images/vaay_logo_melanin.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-3">
+                            <img src="./images/VAAY_NightTropfen-Nightstand-_1_-2.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-3">
+                            <img src="./images/VAAY_Mundspray-Office-_1_-2.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>design <span class="dot"></span></p>
+                            <p>build <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/D--Adler-featured-image.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo4" src="./images/adler_logo_melanin.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-1">
+                            <img src="./images/a1e10473813ef42cf74ecd28c4715f5b.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-1">
+                            <img src="./images/adler_cs-image-03.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>design <span class="dot"></span></p>
+                            <p>build <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/HOMEPAGEREFRESH_DAY1_LOOK7_0161.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo5"src="./images/Dia_and_Co.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-2">
+                            <img src="./images/HOMEPAGEREFRESH_DAY1_LOOK8_0077.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-2">
+                            <img src="./images/04162020_WelcomeSeries-05-0332.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>redesign <span class="dot"></span></p>
+                            <p>migration <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/16x9.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo6" src="./images/palermo_logo_melanin.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-3">
+                            <img src="./images/2019_MAR_26_KarlLagerfeldxOliviaPalermo_05_BAGS-131.webp" class="img-right-rellax" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-3">
+                            <img src="./images/2019_MAR_26_KarlLagerfeldxOliviaPalermo_02_NEW_YORK-002.webp" class="img-left-rellax" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>redesign <span class="dot"></span></p>
+                            <p>build <span class="dot"></span></p>
+                            <p>migration <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="img-block-container" data-aos="up-transform">
+                    <div class="content-img">
+                        <div class="img-mask">
+                            <img src="./images/What-makes-UBB-Unique.webp" class="bg-rellax">
+                            <div>
+                                <img class="hover-logo logo7" src="./images/United_by_blue.svg" alt="">
+                                <div class="bg-blur-mask"></div>
+                            </div>
+                        </div>
+                        <div class="pop-images right-pop-img type-1">
+                            <img src="./images/bisonblanket-black3_2000x.webp" class="img-right-rellax blanket-image" alt="">
+                        </div>
+                        <div class="pop-images left-pop-img type-1">
+                            <img src="./images/w-highpointskort-blue3215_2000x.webp" class="img-left-rellax leg-image" alt="">
+                        </div>
+                    </div>
+                    <div class="tilt-container rellax">
+                        <div class="tilt-text">
+                            <p class="dash">
+                                <svg viewBox="0 0 50 50"><g><rect height="2" width="48" x="1" y="24" fill="#6849e3"/></g><g/></svg></p>
+                            <p>design <span class="dot"></span></p>
+                            <p>build <span class="dot"></span></p>
+                            <p>growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div id='circle'>
+                    <p>Case study</p>
+                </div>
+            </div>
+            <div class="clients">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/carhartt_logo_melanin.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/greats_logo_melanin_2.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/adler_logo_melanin.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/mcgrath_logo_melanin.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/APC.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/vaay_logo_melanin.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/palermo_logo_melanin.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/Faherty.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/dumbgood_logo_melanin.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/Dia_and_Co.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/United_by_blue.svg" alt="">
+                        </div>
+                        <div class="col-sm-3 client-blocks">
+                            <img src="./images/the_sak.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wave-header">
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="container-fluid footer-container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h4>Office</h4>
+                            <div class="footer-desc">
+                                <p>848 Lorimer St, Suite 5G</p>
+                                <p>Brooklyn, NY 11222</p>
+                                <p><a href="tel:646 934 6199">(646) 934 6199</a></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Get in touch</h4>
+                            <div class="footer-desc">
+                                <p><a class="social-link" href="mailto:hello@verbalplusvisual.com">hello@verbalplusvisual.com</a></p>
+                                <p><a class="social-link" href="mailto:newbiz@verbalplusvisual.com">newbiz@verbalplusvisual.com</a></p>
+                                <a href="" class="footer-link">Work with us</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Careers</h4>
+                            <div class="footer-desc">
+                                <p>We're looking for talented, passionate folks to join our team.</p>
+                                <a href="" class="footer-link">Explore Careers</a>
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Social</h4>
+                            <div class="footer-desc">
+                                <p><a href="" class="social-link">Medium</a></p>
+                                <p><a href="" class="social-link">Linkedin</a></p>
+                                <p><a href="" class="social-link">Instagram</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row lower-footer">
+                        <div class="col-sm-6 left-para">
+                            <p>© 2020 VPV Interactive Inc., d/b/a Verbal+Visual. All rights reserved.</p>
+                        </div>
+                        <div class="col-sm-6 right-para">
+                            <a href="" class="social-link">Privacy Policy</a>
+                            <a href="" class="social-link">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
