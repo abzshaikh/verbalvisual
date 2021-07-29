@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 36</title>
+    <defs>
+        <path d="M205,0 C318.2184,0 410,91.7816 410,205 C410,317.086216 320.044854,408.162224 208.390051,409.972536 L205,410 C91.7816,410 0,318.2184 0,205 C0,91.7816 91.7816,0 205,0 Z" id="path-1"></path>
+        <path d="M205,0 C318.2184,0 410,91.7816 410,205 C410,318.2184 318.2184,410 205,410 C91.7816,410 0,318.2184 0,205 C0,91.7816 91.7816,0 205,0 Z" id="path-3"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.5899032 53.0806238,67.6951981 34.5622527,67.995445 L34,68 C15.22232,68 0,52.77768 0,34 C0,15.2223 15.22232,0 34,0 Z" id="path-5"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.77768 52.7777,68 34,68 C15.22232,68 0,52.77768 0,34 C0,15.2223 15.22232,0 34,0 Z" id="path-7"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.589923 53.0806238,67.6951985 34.5622527,67.995445 L34,68 C15.22232,68 0,52.7777 0,34 C0,15.2223 15.22232,0 34,0 Z" id="path-9"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.7777 52.7777,68 34,68 C15.22232,68 0,52.7777 0,34 C0,15.2223 15.22232,0 34,0 Z" id="path-11"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.5899032 53.0806238,67.6951981 34.5622527,67.995445 L34,68 C15.2223,68 0,52.77768 0,34 C0,15.2223 15.2223,0 34,0 Z" id="path-13"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.77768 52.7777,68 34,68 C15.2223,68 0,52.77768 0,34 C0,15.2223 15.2223,0 34,0 Z" id="path-15"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.589923 53.0806238,67.6951985 34.5622527,67.995445 L34,68 C15.2223,68 0,52.7777 0,34 C0,15.2223 15.2223,0 34,0 Z" id="path-17"></path>
+        <path d="M34,0 C52.7777,0 68,15.2223 68,34 C68,52.7777 52.7777,68 34,68 C15.2223,68 0,52.7777 0,34 C0,15.2223 15.2223,0 34,0 Z" id="path-19"></path>
+    </defs>
+    <g id="📄-template---about" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-36">
+            <g id="Group-7">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M205,410 C318.2184,410 410,318.2184 410,205 C410,91.7816 318.2184,0 205,0 C91.7816,0 0,91.7816 0,205 C0,318.2184 91.7816,410 205,410 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M205,410 C318.2184,410 410,318.2184 410,205 C410,91.78163 318.2184,0 205,0 C91.78163,0 0,91.78163 0,205 C0,318.2184 91.78163,410 205,410 Z" id="Stroke-4" stroke="#6849E3" stroke-width="14" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+            <g id="Group-14" transform="translate(30.000000, 312.000000)">
+                <g id="Group-10">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-9"></g>
+                    <path d="M34,68 C52.7777,68 68,52.77768 68,34 C68,15.2223 52.7777,0 34,0 C15.22232,0 0,15.2223 0,34 C0,52.77768 15.22232,68 34,68 Z" id="Fill-8" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                </g>
+                <g id="Group-13">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="Clip-12"></g>
+                    <path d="M34,68 C52.77768,68 68,52.77768 68,34 C68,15.22232 52.77768,0 34,0 C15.22232,0 0,15.22232 0,34 C0,52.77768 15.22232,68 34,68 Z" id="Stroke-11" stroke="#6849E3" stroke-width="14" mask="url(#mask-8)"></path>
+                </g>
+            </g>
+            <g id="Group-21" transform="translate(30.000000, 31.000000)">
+                <g id="Group-17">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="Clip-16"></g>
+                    <path d="M34,68 C52.7777,68 68,52.7777 68,34 C68,15.2223 52.7777,0 34,0 C15.22232,0 0,15.2223 0,34 C0,52.7777 15.22232,68 34,68 Z" id="Fill-15" fill="#FFFFFF" mask="url(#mask-10)"></path>
+                </g>
+                <g id="Group-20">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <g id="Clip-19"></g>
+                    <path d="M34,68 C52.77768,68 68,52.77768 68,34 C68,15.22232 52.77768,0 34,0 C15.22232,0 0,15.22232 0,34 C0,52.77768 15.22232,68 34,68 Z" id="Stroke-18" stroke="#6849E3" stroke-width="14" mask="url(#mask-12)"></path>
+                </g>
+            </g>
+            <g id="Group-28" transform="translate(312.000000, 312.000000)">
+                <g id="Group-24">
+                    <mask id="mask-14" fill="white">
+                        <use xlink:href="#path-13"></use>
+                    </mask>
+                    <g id="Clip-23"></g>
+                    <path d="M34,68 C52.7777,68 68,52.77768 68,34 C68,15.2223 52.7777,0 34,0 C15.2223,0 0,15.2223 0,34 C0,52.77768 15.2223,68 34,68 Z" id="Fill-22" fill="#FFFFFF" mask="url(#mask-14)"></path>
+                </g>
+                <g id="Group-27">
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <g id="Clip-26"></g>
+                    <path d="M34,68 C52.77768,68 68,52.77768 68,34 C68,15.22232 52.77768,0 34,0 C15.22232,0 0,15.22232 0,34 C0,52.77768 15.22232,68 34,68 Z" id="Stroke-25" stroke="#6849E3" stroke-width="14" mask="url(#mask-16)"></path>
+                </g>
+            </g>
+            <g id="Group-35" transform="translate(312.000000, 31.000000)">
+                <g id="Group-31">
+                    <mask id="mask-18" fill="white">
+                        <use xlink:href="#path-17"></use>
+                    </mask>
+                    <g id="Clip-30"></g>
+                    <path d="M34,68 C52.7777,68 68,52.7777 68,34 C68,15.2223 52.7777,0 34,0 C15.2223,0 0,15.2223 0,34 C0,52.7777 15.2223,68 34,68 Z" id="Fill-29" fill="#FFFFFF" mask="url(#mask-18)"></path>
+                </g>
+                <g id="Group-34">
+                    <mask id="mask-20" fill="white">
+                        <use xlink:href="#path-19"></use>
+                    </mask>
+                    <g id="Clip-33"></g>
+                    <path d="M34,68 C52.77768,68 68,52.77768 68,34 C68,15.22232 52.77768,0 34,0 C15.22232,0 0,15.22232 0,34 C0,52.77768 15.22232,68 34,68 Z" id="Stroke-32" stroke="#6849E3" stroke-width="14" mask="url(#mask-20)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
